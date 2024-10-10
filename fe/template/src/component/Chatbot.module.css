@@ -1,0 +1,29 @@
+.stopButton {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 2px;
+  right: 0px;
+}
+.stopButton button {
+  height: 26px;
+  width: 26px;
+  padding: 0;
+  position: relative;
+  right: 20px;
+  border-radius: 50%;
+  border: none;
+  background: #FFF;
+  box-sizing: border-box;
+}
+
+.stopButton button svg {
+  box-sizing: border-box;
+}
+
+.stopButton button:hover {
+  cursor: pointer;
+}

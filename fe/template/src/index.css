@@ -1,0 +1,214 @@
+.nlux-AiChat-root {
+  --nlux-chtr--ftSz: 14px;
+  --nlux-prmInp--ftFm: 14px;
+}
+.nlux-AiChat-root.nlux-theme-nova {
+  --nlux-PromptInput--FontSize: 14px;
+}
+.nlux-launchPad-container>.nlux-comp-welcomeMessage {
+  flex: 1;
+  padding: 0 26px 0 26px;
+  align-items: start;
+  width: auto;
+}
+.nlux-comp-welcomeMessage>.nlux-comp-welcomeMessage-personaName {
+  font-size: 26px;
+  background: linear-gradient(270deg, #ae79cc 3%, #1366ec 96%);
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.nlux-comp-welcomeMessage>.nlux-comp-welcomeMessage-text {
+  margin-top: 16px;
+  color: #666;
+}
+.nlux-conversationStarters-container>.nlux-comp-conversationStarters {
+  display: block;
+  padding: 0 26px 0 26px;
+  min-width: inherit;
+  width: inherit;
+}
+.nlux-conversationStarters-container>.nlux-comp-conversationStarters button.nlux-comp-conversationStarter {
+  height: auto;
+  width: auto;
+  margin-bottom: 12px;
+  border-radius: 0;
+  background: #f2f4ff;
+  font-size: 14px;
+  color: #666;
+}
+
+.nlux-AiChat-root>.nlux-chatRoom-container>.nlux-composer-container {
+  border-top: 1px solid #eee;
+}
+
+
+.nlux-comp-composer>textarea:placeholder {
+  color: #eee;
+}
+
+.nlux-comp-chatItem.nlux-comp-chatItem--bubblesLayout.nlux-comp-chatItem--sent>.nlux-comp-message {
+  border-radius: 0;
+  background: #e5effe;
+  color: #555;
+}
+
+.nlux-comp-chatItem.nlux-comp-chatItem--bubblesLayout.nlux-comp-chatItem--received>.nlux-comp-message {
+  border-radius: 0;
+  color: #555;
+}
+
+.nlux-conversation-container img {
+  max-width: 100%;
+}
+
+.nlux-conversation-container th, .nlux-conversation-container td {
+  padding: 4px;
+  border: 1px solid #CCC;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background-image: url('../static/background.jpg'); /* 替换为你的背景图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个页面 */
+    background-position: center; /* 使背景图片居中 */
+    background-repeat: no-repeat; /* 防止背景图片重复 */
+}
+
+
+header select {
+  margin-left: 5px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 35px;
+  width: 100%;
+  min-width: 5ch;
+  max-width: 10ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+#footer {
+    margin-top: 50px;
+    height: 100px;
+    clear: both;
+    text-align: center;
+    font-size: 15px;
+    color: #EEEEEE;
+}
+
+header {
+    color: black;
+    margin-top: -5px;
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+}
+
+.visualmap-container .chart h3 {
+    margin-left: 8px; /* 手动调整map标题居中 */
+}
+
+.chart h3 {
+    margin-top: 0; /* 移除顶部外边距 */
+    margin-bottom: 10px; /* 添加底部外边距 */
+    font-size: 18px; /* 设置字体大小 */
+    color: black; /* 设置字体颜色 */
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* 调整列之间的间距 */
+    padding: 0;
+    height: 90vh;
+    border-radius: 35px;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 33%; /* 调整左右两边的统计图宽度 */
+    margin-left: 0;
+
+}
+
+.visualmap-container {
+    display: flex;
+    align-items: center;
+    width: 34%; /* 中间的地图宽度增加 */
+    height: 100%; /* 高度设置为100%保证与左右两边对齐 */
+    margin-right: 0;
+    margin-top: 110px;
+}
+
+.bg {
+
+    margin-right: 80px;
+    margin-left: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+iframe {
+    border: none;
+}
+
+#mapModal .modal-dialog {
+    max-width: 100%;
+    margin: auto; /* 自动在水平和垂直方向居中 */
+    padding: 0;
+    height: 100%; /* 确保模态框的高度占满屏幕 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+}
+
+#mapModal .modal-content {
+    background-image: url('../static/background.jpg'); /* 使用你的背景图片路径 */
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 45px;
+    margin: 0;
+    padding: 0;
+    width: 100%; /* 占满整个模态框 */
+}
+
+#mapModal .modal-body {
+    padding: 0;
+    margin: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mapModal .modal-header {
+    background: transparent;
+    border-bottom: none;
+}
+
+#mapModal .modal-footer {
+    background: transparent;
+    border-top: none;
+}
+
+

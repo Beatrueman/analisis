@@ -1,0 +1,98 @@
+:root {
+  --webchat-toolbar-text-color: #fff;
+  --background-color: #fff;
+  --webchat-toolbar-background-color: #1464E4;
+  --border-color: #666;
+
+  --webchat-toolbar-text-color-dark: #333;
+  --background-color-dark: #181818;
+  --border-color-dark: #EEECF0;
+}
+/* @media (prefers-color-scheme: dark) { */
+  /* :root { */
+    /* 当系统设置为深色模式时，覆盖变量值 */
+    /* --webchat-toolbar-text-color: var(--webchat-toolbar-text-color-dark); */
+    /* --background-color: var(--background-color-dark); */
+    /* --border-color-dark: var(--border-color-dark); */
+    /* 这里直接使用了之前定义的深色变量，实际中你可以直接定义新的颜色值 */
+  /* } */
+/* } */
+
+.title {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 26px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--webchat-toolbar-text-color);
+}
+
+.bubbleTip {
+  background-size: 100%;
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #EEECF0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  background-color: #FFF;
+}
+
+.chatBoxContainer {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--background-color);
+  border: 1px solid #EEECF0;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 35px 0px;
+}
+
+.toolbar {
+  display: block;
+  height: 50px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--webchat-toolbar-background-color);
+}
+
+.chatBoxVisible {
+  display: block;
+}
+
+.toolbar button {
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  top: 5px;
+  color: var(--webchat-toolbar-text-color);
+  background-color: transparent;
+  border: none; /* 添加这一行来移除所有状态下的边框 */
+}
+
+.toolbar button:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* 示例：使背景色变深一点，您可以根据需要调整此值 */
+  cursor: pointer; /* 改变鼠标指针为手型，提升用户体验 */
+}
+
+
+.closeButton {
+  right: 5px;
+  font-size: 20px;
+}
+
+.refreshButton {
+  right: 40px;
+}
+
+.refreshButton svg path {
+  fill: var(--webchat-toolbar-text-color);;
+}
+
+.closeButton svg path {
+  stroke: var(--webchat-toolbar-text-color);;
+}

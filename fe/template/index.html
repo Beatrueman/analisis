@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全国艾滋病数据可视化分析</title>
+    <link rel="stylesheet" href="src/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入 Bootstrap JS 用作图片轮播 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="static/hiv.svg" type="image/x-icon">
+<!--    <link rel="icon" href="https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico" type="image/x-icon" />-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+<!--    <title>示例网站</title>-->
+<!--    <link-->
+<!--      rel="icon"-->
+<!--      href="https://img.alicdn.com/tfs/TB1_ZXuNcfpK1RjSZFOXXa6nFXa-32-32.ico"-->
+<!--      type="image/x-icon"-->
+<!--    />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      href="//g.alicdn.com??code/npm/@ali/hmod-ace-2023-box/0.1.0/index.css,code/npm/@ali/hmod-ace-2023-service-contact-us/0.0.24/index.css,code/npm/@ali/hmod-aliyun-com-floating-toolbar/0.1.6/index.css,code/npm/@ali/hmod-aliyun-com-global-nav-search/0.5.10/index.css,code/npm/@ali/hmod-aliyun-com-global-nav/0.1.20/index.css,hmod/ace-2023-homepage-banner/0.1.11/index.css,hmod/ace-2023-homepage-news/0.1.5/index.css,hmod/ace-common-aliyun-index-title/0.0.4/index.css,hmod/ace-common-row-aliyun-free-trial/0.0.4/index.css,hmod/ace-common-row-aliyun-standard/0.0.8/index.css,hmod/ace-common-row-basic-product-datas/0.0.6/index.css,hmod/ace-common-row-entry-alicloud-service/0.0.6/index.css,hmod/ace-customer-case-home/0.1.1/index.css,hmod/ace-dpl-home-map/0.1.0/index.css,hmod/ace-dpl-home-product-category/0.1.0/index.css,hmod/ace-dpl-home-row-best-practices/0.0.10/index.css,hmod/ace-dpl-new-to-link/0.0.8/index.css,hmod/ace-homepage-2020-hmod-footer/0.1.5/index.css,hmod/ace-index-card-product-trial-service/0.0.5/index.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header style='color:aliceblue; font-size: 40px; font-weight: bold;'>
+        <img src="static/hiv.svg" style="height: 80px; width: 80px;">
+        全国艾滋病数据可视化分析
+        <span style='font-size: 24px; margin-left: 10px;'>年份：</span>
+        <select id="selector">
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020" selected>2020</option>
+        </select>
+    <div>
+        <span class="data-source" style="font-size: 15px; margin-left: 1200px;">数据来源于</span>
+        <a href="https://www.phsciencedata.cn/Share/" class="data-source" target="_blank" style="font-size: 15px; color: #CDCDC1">公共卫生科学数据中心</a>
+    </div>
+        </header>
+    <hr>
+    <div class="bg" style="height: 750px">
+        <div class="container">
+            <div class="column">
+                <div class="chart" style="border-radius: 35px">
+                        <iframe src="static/bar_case.html" width="100%" height="380px" frameborder="0"></iframe>
+                </div>
+                <br>
+                <div class="chart" style="border-radius: 35px;">
+                    <h3 style="color:aliceblue; font-weight: bold;">全国艾滋病发病率/死亡率走势图</h3>
+                    <iframe src="static/line.html" width="100%" height="300px" frameborder="0"></iframe>
+                </div>
+            </div>
+                <div class="visualmap-container" style="display: flex; flex-direction: column; align-items: center; margin-top: 0px">
+                    <div class="chart" style="background-color: rgba(255, 255, 255, 0.5); border-radius: 35px; width: 100%; height: 220px; margin-bottom: 80px;">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 280px;">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" style="width: 100%; height: 100%; border-radius: 35px;">
+                        <div class="carousel-item active">
+                            <img src="static/img1.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/img2.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="static/img3.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+                    <div class="chart" style="border-radius: 35px; width: 100%; margin-top: 10px;">
+                        <h3 style="color:aliceblue; font-weight: bold;">全国艾滋病分布情况</h3>
+                        <iframe src="static/visualmap.html" width="185%" height="400px" frameborder="0"></iframe>
+                    </div>
+            </div>
+
+            <div class="column">
+                <div class="chart" style="border-radius: 35px">
+                        <iframe src="static/bar_death.html" width="100%" height="380px" frameborder="0"></iframe>
+                </div>
+                <br>
+                <div class="chart" style="border-radius: 35px">
+                    <h3 style="color:aliceblue; font-weight: bold;">全国按年龄患艾滋病人数统计图</h3>
+                    <iframe src="static/pie_age.html" width="100%" height="300px" frameborder="0"></iframe>
+                </div>
+             </div>
+        </div>
+</div>
+    <div id="footer">
+            <hr>
+            <span>Copyright © 2024 <span><a href="https://github.com/Beatrueman" style="color: #CDCDC1">Yiiong</a></span>. All rights reserved.</span>
+            <br>
+        <span>Version 1.0.0</span>
+    </div>
+   <!-- Modal -->
+    <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="max-width: 90%;">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background: aliceblue;"></button>
+                </div>
+                <div class="modal-body" id="mapModalBody">
+                   <iframe id="mapIframe" src="" width="75%" height="600px" frameborder="0" style="margin: 0 30px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    $(document).ready(function() {
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.type === 'provinceClick') {
+                var province = event.data.province;
+
+                $.ajax({
+                    url: '/api/generate_3d_map', // 后端 API 地址
+                    type: 'GET',
+                    data: { province: province }, // 传递的参数，省份名
+                    success: function(htmlUrl) {
+                        console.log('Generated HTML URL:', htmlUrl);  // 调试信息
+
+                        // 设置 iframe 的 src 属性为生成的 HTML 文件 URL
+                        $('#mapIframe').attr('src', htmlUrl);
+
+                        // 显示模态框
+                        var myModal = new bootstrap.Modal(document.getElementById('mapModal'));
+                        myModal.show();
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        console.error('Error fetching 3D map:', textStatus, errorThrown);
+                    }
+                });
+            }
+        }, false);
+    });
+</script>
+
+
+    <!-- <script src="demo_layout.js"></script> -->
+    <script>
+      window.CHATBOT_CONFIG = {
+        endpoint: 'https://webchat-bot-e-gvbogvtpdh.cn-hangzhou.fcapp.run/chat',
+        displayByDefault: false, // 默认不展示 AI 助手聊天框
+        aiChatOptions: { // aiChatOptions 中 options 会传递 aiChat 组件，自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat
+          conversationOptions: { // 自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat#conversation-options
+            conversationStarters: [
+              {prompt: '什么是艾滋病？'},
+              {prompt: '艾滋病是如何传播的?'},
+              {prompt: '如何预防艾滋病？'},
+            ]
+          },
+          displayOptions: { // 自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat#display-options
+            height: 600,
+            // width: 400,
+          },
+          personaOptions: { // 自定义取值参考：https://docs.nlkit.com/nlux/reference/ui/ai-chat#chat-personas
+            assistant: {
+              name: '您好，我可以为您科普艾滋病',
+              // AI 助手的图标
+              avatar: 'https://img.alicdn.com/imgextra/i2/O1CN01Pda9nq1YDV0mnZ31H_!!6000000003025-54-tps-120-120.apng',
+              tagline: '您可以尝试点击下方的快捷入口开启体验！',
+            }
+          }
+        },
+        dataProcessor: {
+          /**
+           * 在向后端大模型应用发起请求前改写 Prompt。
+           * 可以用于总结网页场景，在发送前将网页内容包含在内，同时避免在前端显示这些内容。
+           * @param {string} prompt - 用户输入的 Prompt
+           */
+          rewritePrompt(prompt) {
+            return prompt;
+          }
+        }
+      };
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+    <style>
+      :root {
+        /* webchat 工具栏的颜色 */
+        --webchat-toolbar-background-color: #1464E4;
+        /* webchat 工具栏文字和按钮的颜色 */
+        --webchat-toolbar-text-color: #FFF;
+      }
+      /* webchat 对话框如果被遮挡，可以尝试通过 z-index、bottom、right 等设置 来调整*/
+      .webchat-container {
+        z-index: 100;
+        bottom: 10px;
+        right: 10px;
+      }
+      /* webchat 的唤起按钮如果被遮挡，可以尝试通过 z-index、bottom、right 等设置 来调整*/
+      .webchat-bubble-tip {
+        z-index: 99;
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
+  <script>
+            $(document).ready(function() {
+                // 设置选择框的初始值
+                $('#selector').val('2020');
+
+                // 处理选择框的变化事件
+                $('#selector').change(function() {
+                    var selectedYear = $(this).val();
+                    $.ajax({
+                        url: '/api/update_year',
+                        type: 'POST',
+                        data: { year: selectedYear },
+                        success: function(response) {
+                            if (response.error) {
+                                alert('Failed to update year.');
+                            }
+                        },
+                        error: function(error) {
+                            console.error('Error:', error);
+                        }
+                    });
+                });
+            });
+        </script>
+  </body>
+</html>

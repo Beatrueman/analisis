@@ -1,0 +1,119 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background-image: url('../background.jpg'); /* 替换为你的背景图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个页面 */
+    background-position: center; /* 使背景图片居中 */
+    background-repeat: no-repeat; /* 防止背景图片重复 */
+}
+
+
+header select {
+  margin-left: 5px;
+  ont-size: 20px;
+  padding: 5px;
+  border-radius: 35px;
+  width: 100%;
+  min-width: 5ch;
+  max-width: 10ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+#footer {
+    margin-top: 50px;
+    height: 100px;
+    clear: both;
+    text-align: center;
+    font-size: 15px;
+    color: #EEEEEE;
+}
+
+header {
+    color: black;
+    margin-top: -5px;
+    font-size: 36px;
+    padding: 20px;
+    text-align: center;
+}
+
+.visualmap-container .chart h3 {
+    margin-left: 8px; /* 手动调整map标题居中 */
+}
+
+.chart h3 {
+    margin-top: 0; /* 移除顶部外边距 */
+    margin-bottom: 10px; /* 添加底部外边距 */
+    font-size: 18px; /* 设置字体大小 */
+    color: black; /* 设置字体颜色 */
+    text-align: center;
+}
+
+.container {
+    flex: 1;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* 调整列之间的间距 */
+    padding: 0;
+    height: 90vh;
+    border-radius: 35px;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 33%; /* 调整左右两边的统计图宽度 */
+    margin-left: 0;
+
+}
+
+.visualmap-container {
+    display: flex;
+    align-items: center;
+    width: 34%; /* 中间的地图宽度增加 */
+    height: 100%; /* 高度设置为100%保证与左右两边对齐 */
+    margin-right: 0;
+    margin-top: 110px;
+}
+
+.bg {
+
+    margin-right: 80px;
+    margin-left: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+iframe {
+    border: none;
+}
+
+#mapModal  .modal-body {
+    margin-right: 80px;
+    margin-left: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    color: rgba(255, 255, 255, 0.3);
+}

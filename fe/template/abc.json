@@ -1,0 +1,14 @@
+{
+  "assets": {
+    "type": "command",
+    "command": {
+      "cmd": [
+        "tnpm install --install-node=16.13.1",
+        "tnpm install",
+        "tnpm run build",
+        "rm -f ./dist/index.html",
+        "mv ./dist $BUILD_DEST"
+      ]
+    }
+  }
+}

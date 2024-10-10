@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/maps/jilin.js"></script>
+
+</head>
+<body >
+    <div id="26a2e8181ea245188c39273465a83eb7" class="chart-container" style="width:900px; height:500px; "></div>
+    <script>
+        var chart_26a2e8181ea245188c39273465a83eb7 = echarts.init(
+            document.getElementById('26a2e8181ea245188c39273465a83eb7'), 'white', {renderer: 'canvas'});
+        var option_26a2e8181ea245188c39273465a83eb7 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "lines3D",
+            "coordinateSystem": "geo3D",
+            "geo3DIndex": 0,
+            "globeIndex": 0,
+            "polyline": false,
+            "effect": {
+                "show": true,
+                "period": 4,
+                "trailWidth": 3,
+                "trailLength": 0.5,
+                "trailColor": "#f00",
+                "trailOpacity": 1
+            },
+            "lineStyle": {
+                "show": false,
+                "width": 1,
+                "opacity": 0,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#fff"
+            },
+            "data": [],
+            "blendMode": "source-over",
+            "zlevel": -10,
+            "silent": false
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "geo3D": {
+        "map": "\u5409\u6797",
+        "boxWidth": 100,
+        "boxHeight": 10,
+        "regionHeight": 3,
+        "groundPlane": {
+            "show": false,
+            "color": "#aaa"
+        },
+        "instancing": false,
+        "itemStyle": {
+            "color": "rgb(5,101,123)",
+            "borderColor": "rgb(62,215,213)",
+            "borderWidth": 0.8,
+            "opacity": 1
+        },
+        "emphasis": {},
+        "light": {
+            "main": {
+                "color": "#fff",
+                "intensity": 1.2,
+                "shadow": false,
+                "shadowQuality": "medium",
+                "alpha": 55,
+                "beta": 10
+            },
+            "ambient": {
+                "color": "#fff",
+                "intensity": 0.3
+            },
+            "ambientCubemap": {
+                "diffuseIntensity": 0.5,
+                "specularIntensity": 0.5
+            }
+        },
+        "postEffect": {
+            "enable": false,
+            "bloom": {
+                "enable": false,
+                "bloomIntensity": 0.1
+            },
+            "depthOfField": {
+                "enable": false,
+                "focalDistance": 50,
+                "focalRange": 20,
+                "fstop": 2.8,
+                "blurRadius": 10
+            },
+            "SSAO": {
+                "enable": false,
+                "quality": "medium",
+                "radius": 2,
+                "intensity": 1
+            },
+            "colorCorrection": {
+                "enable": false,
+                "exposure": 0,
+                "brightness": 0,
+                "contrast": 1,
+                "saturation": 1
+            },
+            "FXAA": {
+                "enable": false
+            }
+        },
+        "temporalSuperSampling": {
+            "enable": "auto"
+        },
+        "viewControl": {
+            "projection": "perspective",
+            "autoRotate": false,
+            "autoRotateDirection": "cw",
+            "autoRotateSpeed": 10,
+            "autoRotateAfterStill": 3,
+            "damping": 0.8,
+            "rotateSensitivity": 1,
+            "zoomSensitivity": 1,
+            "panSensitivity": 1,
+            "panMouseButton": "left",
+            "rotateMouseButton": "middle",
+            "distance": 100,
+            "minDistance": 40,
+            "maxDistance": 400,
+            "orthographicSize": 100,
+            "minOrthographicSize": 20,
+            "maxOrthographicSize": 400,
+            "alpha": 40,
+            "beta": 0,
+            "center": [
+                -10,
+                0,
+                10
+            ],
+            "minAlpha": 5,
+            "maxAlpha": 90,
+            "minBeta": -80,
+            "maxBeta": 80,
+            "animation": true,
+            "animationDurationUpdate": 1000,
+            "animationEasingUpdate": "cubicInOut"
+        },
+        "zlevel": -10,
+        "left": "auto",
+        "top": "auto",
+        "right": "auto",
+        "bottom": "auto",
+        "width": "auto",
+        "height": "auto"
+    }
+};
+        chart_26a2e8181ea245188c39273465a83eb7.setOption(option_26a2e8181ea245188c39273465a83eb7);
+    </script>
+</body>
+</html>
