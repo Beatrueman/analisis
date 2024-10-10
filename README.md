@@ -12,7 +12,7 @@
 
 ## 技术栈
 
-***Python***：使用*pandas*做数据处理，使用[*pyecharts*]([简介 - pyecharts - A Python Echarts Plotting Library built with love.](https://pyecharts.org/#/zh-cn/intro))做数据可视化生成，使用*flask*制作接口（用于根据年份更新对应的数据）
+***Python***：使用*pandas*做数据处理，使用[*pyecharts*](https://pyecharts.org/#/zh-cn/intro)做数据可视化生成，使用*flask*制作接口（用于根据年份更新对应的数据）
 
 数据来源于[公共卫生科学数据中心 (phsciencedata.cn)](https://www.phsciencedata.cn/Share/)
 
