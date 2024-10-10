@@ -115,9 +115,9 @@ npm run dev -- --host
 
 整个项目已打包为Docker镜像，并推送至仓库。
 
-`beatrueman/analisis:1.0.0`
+`beatrueman/analisis:1.0.5`
 
 ```
-docker run -p 5173:5173 beatrueman/analisis:1.0.0
+docker run -p 5173:5173 beatrueman/analisis:1.0.5
 ```
 
