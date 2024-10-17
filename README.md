@@ -12,7 +12,7 @@
 
 ## 技术栈
 
-***Python***：使用*pandas*做数据处理，使用[*pyecharts*](https://pyecharts.org/#/zh-cn/intro)做数据可视化生成，使用*flask*制作接口（用于根据年份更新对应的数据）
+***Python***：使用*pandas*做数据处理，使用[*pyecharts*]([简介 - pyecharts - A Python Echarts Plotting Library built with love.](https://pyecharts.org/#/zh-cn/intro))做数据可视化生成，使用*flask*制作接口（用于根据年份更新对应的数据）
 
 数据来源于[公共卫生科学数据中心 (phsciencedata.cn)](https://www.phsciencedata.cn/Share/)
 
@@ -21,7 +21,7 @@
 - 使用*jQuery*库实现AJAX发送请求到服务器用来更新各年份对应的数据以及生成对应省份的3D图。
 - 使用*Bootstrap*库实现图片的轮播以及3D模态框的展示。
 
-参考[10分钟在网站上增加一个AI助手](https://help.aliyun.com/zh/model-studio/use-cases/add-an-ai-assistant-to-your-website-in-10-minutes?spm=a2c4g.11186623.0.0.613365dfLQUfDC#80d3029cb9q06)，利用[阿里云百炼](https://bailian.console.aliyun.com/?spm=a2c4g.11186623.0.0.12dc65dfmbl1gr#/home)，将通义千问接入项目，提供艾滋病相关知识的科普。
+参考[10分钟在网站上增加一个AI助手](https://help.aliyun.com/zh/model-studio/use-cases/add-an-ai-assistant-to-your-website-in-10-minutes?spm=a2c4g.11186623.0.0.613365dfLQUfDC#80d3029cb9q06)，利用[阿里云百炼]([阿里云百炼 (aliyun.com)](https://bailian.console.aliyun.com/?spm=a2c4g.11186623.0.0.12dc65dfmbl1gr#/home))，将通义千问接入项目，提供艾滋病相关知识的科普。
 
 ### 接口介绍
 
@@ -33,17 +33,21 @@
 
 前端通过监听鼠标点击事件，识别用户点击的哪一个省份。将省份province传入该接口，province作为参数传入生成3D图的函数，生成对应省份的3D html文件到`fe/template/static/province`
 
+### 逻辑介绍
+
+![image-20241017152422575](https://gitee.com/beatrueman/images/raw/master/img/202410171524698.png)
+
 ## 功能介绍
 
 ### 统计图展示
 
 整个页面展示了五个统计图
 
-- 饼图（Pie）：分年龄段展示本年艾滋病人数。
-- 象形柱状图（PictorialBar）：展示本年艾滋病全国发病数/死亡数前十名。
-- 折线图（Line）：2010-2020年全国发病率/死亡率走势图。
-- 地图（Map）：展示本年艾滋病全国分布情况。
-- 3D地图（Map3D）：展示每个省份的3D效果。
+- 饼图（Pie）：分年龄段展示本年艾滋病人数
+- 象形柱状图（PictorialBar）：展示本年艾滋病全国发病数/死亡数前十名
+- 折线图（Line）：2010-2020年全国发病率/死亡率走势图
+- 地图（Map）：展示本年艾滋病全国分布情况
+- 3D地图（Map3D）：展示每个省份的3D效果
 
 ### 根据年份更新数据
 
@@ -115,9 +119,9 @@ npm run dev -- --host
 
 整个项目已打包为Docker镜像，并推送至仓库。
 
-`beatrueman/analisis:1.0.5`
+`beatrueman/analisis:1.0.0`
 
 ```
-docker run -p 5173:5173 beatrueman/analisis:1.0.5
+docker run -p 5173:5173 beatrueman/analisis:1.0.0
 ```
 
