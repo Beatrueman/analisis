@@ -12,7 +12,7 @@
 
 ## 技术栈
 
-***Python***：使用*pandas*做数据处理，使用[*pyecharts*]([简介 - pyecharts - A Python Echarts Plotting Library built with love.](https://pyecharts.org/#/zh-cn/intro))做数据可视化生成，使用*flask*制作接口（用于根据年份更新对应的数据）
+***Python***：使用*pandas*做数据处理，使用[*pyecharts*](https://pyecharts.org/#/zh-cn/intro)做数据可视化生成，使用*flask*制作接口（用于根据年份更新对应的数据）
 
 数据来源于[公共卫生科学数据中心 (phsciencedata.cn)](https://www.phsciencedata.cn/Share/)
 
@@ -21,7 +21,7 @@
 - 使用*jQuery*库实现AJAX发送请求到服务器用来更新各年份对应的数据以及生成对应省份的3D图。
 - 使用*Bootstrap*库实现图片的轮播以及3D模态框的展示。
 
-参考[10分钟在网站上增加一个AI助手](https://help.aliyun.com/zh/model-studio/use-cases/add-an-ai-assistant-to-your-website-in-10-minutes?spm=a2c4g.11186623.0.0.613365dfLQUfDC#80d3029cb9q06)，利用[阿里云百炼]([阿里云百炼 (aliyun.com)](https://bailian.console.aliyun.com/?spm=a2c4g.11186623.0.0.12dc65dfmbl1gr#/home))，将通义千问接入项目，提供艾滋病相关知识的科普。
+参考[10分钟在网站上增加一个AI助手](https://help.aliyun.com/zh/model-studio/use-cases/add-an-ai-assistant-to-your-website-in-10-minutes?spm=a2c4g.11186623.0.0.613365dfLQUfDC#80d3029cb9q06)，利用[阿里云百炼](https://bailian.console.aliyun.com/?spm=a2c4g.11186623.0.0.12dc65dfmbl1gr#/home)，将通义千问接入项目，提供艾滋病相关知识的科普。
 
 ### 接口介绍
 
